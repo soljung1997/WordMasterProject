@@ -1,34 +1,95 @@
-Usage
-Explain how to use your project. Include code examples or screenshots if relevant.
+# Word Manager (단어 관리자 프로젝트)
 
-Configuration
-If your project requires configuration, explain how to configure it. Include details about configuration files or settings.
+Word Manager는 영어 단어를 관리하고 .txt 파일에 저장하는 간단한 Java 어플리케이션이다. 이 어플리케이션을 사용하여 모든 단어를 보기, 난이도 별로 단어 검색, 특정 단어 검색, 단어 추가, 단어 업데이트 및 삭제, 단어 데이터를 파일에 저장하는 등의 작업이 가능하다.
 
-Contributing
-If you welcome contributions, outline guidelines for how others can contribute to your project. Mention your code of conduct, if applicable.
+## 시작화면
 
-Credits
-Acknowledge contributors, libraries, or resources that have influenced or contributed to your project.
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/b4ad3182-983e-42de-bd3b-34339ae7cd39)
 
-License
-This project is licensed under the License Name - see the LICENSE file for details.
 
-Demo
-Link to a live demo or provide a video walkthrough, if available.
+## 기능
 
-Screenshots/GIFs
-Include visual elements like screenshots or GIFs to showcase your project.
+### 1. 모든 단어 보기 - txt 파일에 불러온 모든 단어와 txt파일로 저장하기 전에 새로 추가한 단어들을 모두 출력한다.
 
-FAQ
-Address common questions or issues that users might encounter.
+- 터미널에 1을 입력하면 txt파일에 저장되어있는 모든 단어를 출력한다.
 
-Contact
-Provide contact information or ways for users to reach out with questions or feedback.
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/8976b5ac-57d9-4bf2-95e4-f111806da700)
 
-Acknowledgments
-Express gratitude to individuals or organizations that have supported your project.
 
-Changelog
-Maintain a changelog or release notes to document version history and changes.
+### 2. 수준별 단어 보기 - 단어를 입력된 수준/난이도에 따라 같은 난이도의 단어를 모두 출력한다.
 
-vbnet
+- 터미널에 2를 입력하면 <원하는 레벨은? (1~3)> 이 나온다.
+- 그중 1(쉬운단어)에서 3(어려운단어)을 선택하면 그 난이도에 단어를 모두 출력한다.
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/14845a84-2bff-4756-9efc-3da5689d6b92)
+
+
+### 3. 단어 검색 - 특정 단어를 파일에서 찾는 기능, 검색어가 단어에 포함되어있다면 그것도 출력한다. e.g.: ap 검색하면 apple 등 "ap"가 들어있는 모든 단어를 출력한다.
+
+- 터미널에 3을 입력하면 "==> 원하는 단어는?" 이 나온다.
+- 키워드만 입력하면 키워드 포함된 모든 단어를 출력한다.
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/6fa94945-fb77-4631-bcdd-5241a21bdd63)
+
+
+### 4. 단어 추가 - 새로운 단어를 출력한다.
+
+- 터미널에 4를 입력하면 "난이도(1, 2, 3) & 새 단어 입력" 이라는 프롬트 옆에 <번호>_<영문단어> 를 입력한다.
+- 터미널에 "뜻 입력:" 프롬트 옆에 국문으로 입력한 단어의 뜻을 입력한다.
+  
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/2682ad15-c05c-4fe8-bc64-24fae59cf095)
+
+[추가된 단어 1번 옵션으로 확인]
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/1865a02f-c69b-48b4-bed8-8564c9f79377)
+
+
+### 5. 단어 수정 - 목록에 있는 단어중 단어의 뜻을 수정한다.
+
+- 터미널에 5를 입력하면 "수정할 단어 검색 :" 이 뜬다.
+- 터미널에 단어 검색과 똑같이 영문으로 키워드 입력한다.
+  - 출력된 단어들 중 번호에 맞는 단어를 찾는다.
+- 터미널에 해당된 숫자를 입력한다.
+- "뜻 입력:" 옆에 국문으로 선택한 단어의 뜻을 수정한다.
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/c517c8a3-da7a-4065-80d8-db20043e2977)
+
+[수정된 단어 뜻]
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/d9060b48-ff1c-4d14-9bde-887c6e6dc92f)
+
+
+### 6. 단어 삭제 - 검색어로 단어를 찾아서 삭제한다.
+
+- 터미널에 6을 입력하면 "삭제할 단어 검색 :" 프롬트가 뜬다.
+- 터미널에 키워드를 입력한다. "삭제할 번호 선택 :" 옆에 삭제할 단어 좌측에 있는 번호를 입력한다.
+- "정말로 삭제하실래요(Y/n) :" 이라는 프롬트 옆에 "Y/y"를 입력하면 삭제되고 "n"을 입력하면 삭제가 안된다.
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/eb973890-caae-4ac5-989f-a24a96db7add)
+
+[hello 단어 위에 있는 apple 없어짐]
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/76e25cc7-d0c8-45b8-824f-48be04598047)
+
+
+### 7. 파일 저장 - 파일을 저장한다.
+
+- 터미널에 7을 입력하고 "==> 데이터 저장 완료 !!!" 가 출력되면 txt 파일로 저장된다.
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/6542b4f1-609f-44b4-86ca-3742a3d7861d)
+
+
+### 0. 나가기 - 프로그램을 종료한다.
+
+- 프로그램 종료.
+
+![image](https://github.com/soljung1997/WordMasterProject/assets/143365361/82e7880c-b663-4415-a021-87c091b195be)
+
+
+## 시작하기
+
+### 사전 필수 조건
+
+- Java 개발 키트 (JDK)
+- Java 통합 개발 환경 (IDE) 또는 텍스트 편집기
+- Git (선택 사항, 리포지토리를 복제하는 경우)
