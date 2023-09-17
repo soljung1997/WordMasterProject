@@ -2,6 +2,8 @@ package com.mycom.word;
 import java.io.*;
 import java.util.ArrayList ;
 import java.util.* ;
+import java.util.logging.Logger;
+
 public class WordCRUD implements ICRUD {
     Scanner s ;
     final String fname = "Dictionary.txt" ;
@@ -129,7 +131,7 @@ public class WordCRUD implements ICRUD {
             br.close() ;
             System.out.println("==> " + count + "개 로딩 완료!!!") ;
         } catch(IOException e){
-            e.printStackTrace() ;
+            e.printStackTrace();
         }
     }
 
